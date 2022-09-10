@@ -34,7 +34,10 @@ const cylinder = new THREE.Mesh( geometry_cy, material_cy );
 scene.add( cylinder );
 cylinder.position.x=30;
 
-
+const geometry = new THREE.BoxGeometry( 1, 1, 1 );
+const material = new THREE.MeshPhongMaterial( { color: 0x00ff00 } );
+const cube = new THREE.Mesh( geometry, material );
+scene.add( cube );
 
 camera.position.x = 10;
 camera.position.y = 5;
